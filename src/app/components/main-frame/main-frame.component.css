@@ -1,0 +1,20 @@
+.main-frame-background {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 30vh 30vh;
+    grid-template-areas:    "t"
+                            "m"
+                            "b";
+    width: 555px;
+    height: 781px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #152336;
+    border-radius: 2px;
+    margin: 443px;
+    margin-right: 443px;
+    margin-top: 121px;
+    margin-bottom: 121px;
+}
+
+
