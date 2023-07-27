@@ -10,6 +10,7 @@ import { Subscription } from 'rxjs';
 })
 export class AppComponent {
   title = 'dontPress';
+  body = ['body']
   showLightMode: boolean = false;
   subscription!: Subscription
 
@@ -18,6 +19,7 @@ export class AppComponent {
   ngOnInit() {
     this.subscription = this.buttonService.buttonClicked.subscribe(() => {
       this.showLightMode = true;
+      this.body = ['body-light-mode']
     });
   }
 

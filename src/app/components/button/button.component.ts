@@ -7,7 +7,7 @@ import { ButtonService } from '../../button.service'
   styleUrls: ['./button.component.css']
 })
 export class ButtonComponent {
-  textoBotao: string = 'Press'
+  textoBotao: string = "Don't"
   botao = ['botao']
 
   constructor(private buttonService: ButtonService) {}

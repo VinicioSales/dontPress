@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./light-mode.component.css']
 })
 export class LightModeComponent {
-
+  texto = ['texto']
 }

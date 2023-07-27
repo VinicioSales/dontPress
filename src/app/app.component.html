@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Don't Press the Button</title>
 </head>
-<body>
+<body [ngClass]="body">
   <div *ngIf="!showLightMode; else elseBlock">
     <app-main-frame>
       <app-texto></app-texto>
@@ -13,7 +13,8 @@
     </app-main-frame>
   </div>
   <ng-template #elseBlock>
-    <app-light-mode></app-light-mode>
+    <app-light-mode>
+    </app-light-mode>
   </ng-template>
 </body>
 </html>
