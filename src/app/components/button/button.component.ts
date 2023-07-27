@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ButtonComponent {
   textoBotao: string = 'Press'
+  botao = ['botao']
+  change(): void {
+    this.textoBotao = 'Press to restore order'
+    this.botao = ['botao-change']
+  } 
 }
