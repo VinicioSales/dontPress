@@ -1,7 +1,7 @@
 .main-frame-background {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30vh 30vh 30vh;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:    "t"
                             "m"
                             "b";
@@ -17,4 +17,17 @@
     margin-bottom: 121px;
 }
 
+.main-frame-background .m {
+    grid-area: m;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.main-frame-background .t {
+    grid-area: t;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

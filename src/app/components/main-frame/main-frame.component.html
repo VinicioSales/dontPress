@@ -1,2 +1,8 @@
 <div [ngClass]="mainFrameBackground">
+    <div [ngClass]="'t'">
+        <ng-content select="app-texto"></ng-content>
+    </div>
+    <div [ngClass]="'m'">
+        <ng-content select="app-button"></ng-content>
+    </div>
 </div>
