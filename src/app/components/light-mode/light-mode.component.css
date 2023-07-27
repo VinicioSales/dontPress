@@ -37,6 +37,5 @@
 }
 
 .botao:hover {
-    background: red;
-    color: black;
+    background: green;
 }

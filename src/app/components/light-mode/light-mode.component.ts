@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ButtonService } from '../../button.service'
 
 @Component({
   selector: 'app-light-mode',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class LightModeComponent {
   texto = ['texto']
+
+  constructor(private buttonService: ButtonService) {}
+
+  change(): void {
+    this.buttonService.buttonClicked.next()
+  }
 }

@@ -18,8 +18,8 @@ export class AppComponent {
 
   ngOnInit() {
     this.subscription = this.buttonService.buttonClicked.subscribe(() => {
-      this.showLightMode = true;
-      this.body = ['body-light-mode']
+      this.showLightMode = !this.showLightMode;
+      this.body = this.showLightMode ? ['body-light-mode'] : ['body'];
     });
   }
 

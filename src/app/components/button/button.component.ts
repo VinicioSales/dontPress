@@ -13,8 +13,6 @@ export class ButtonComponent {
   constructor(private buttonService: ButtonService) {}
 
   change(): void {
-    this.textoBotao = 'Press to restore order'
-    this.botao = ['botao-change']
     this.buttonService.buttonClicked.next();
   } 
 }
