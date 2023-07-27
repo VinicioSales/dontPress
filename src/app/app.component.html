@@ -6,9 +6,14 @@
   <title>Don't Press the Button</title>
 </head>
 <body>
-  <app-main-frame>
-    <app-texto></app-texto>
-    <app-button></app-button>
-  </app-main-frame>
+  <div *ngIf="!showLightMode; else elseBlock">
+    <app-main-frame>
+      <app-texto></app-texto>
+      <app-button></app-button>
+    </app-main-frame>
+  </div>
+  <ng-template #elseBlock>
+    <app-light-mode></app-light-mode>
+  </ng-template>
 </body>
 </html>

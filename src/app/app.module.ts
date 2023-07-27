@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainFrameComponent } from './components/main-frame/main-frame.component';
 import { ButtonComponent } from './components/button/button.component';
 import { TextoComponent } from './components/texto/texto.component';
+import { LightModeComponent } from './components/light-mode/light-mode.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { TextoComponent } from './components/texto/texto.component';
     MainFrameComponent,
     ButtonComponent,
     TextoComponent,
+    LightModeComponent,
   ],
   imports: [
     BrowserModule,
